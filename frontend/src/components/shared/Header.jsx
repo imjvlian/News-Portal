@@ -10,6 +10,7 @@ import {
   DropdownMenuTrigger,
 } from "../ui/dropdown-menu";
 import { Button } from "../ui/button";
+import DarkModeToggler from "../ui/DarkModeToggler";
 
 const Header = () => {
   return (
@@ -55,14 +56,20 @@ const Header = () => {
 
           <Link to={"/news"}>
             <li className="hidden lg:inline text-slate-700 hover:underline">
-              News Article
+              Placeholder
             </li>
           </Link>
         </ul>
 
+        <div className="flex align-item-center gap-4">
+
         <Link to={"/sign-in"}>
           <Button size="lg" rounded="5">Sign In</Button>
         </Link>
+
+        <DarkModeToggler />
+        
+        </div>
         {/* <DropdownMenu>
             <DropdownMenuTrigger asChild>
                 <div>
